@@ -35,7 +35,10 @@ html {
 #fh5co-hero-wrapper {
   height: 800px;
   width: 100%;
-  background: url("../img/banner-bg.jpg") no-repeat center;
+  background: url("../public/logocompleto.png") no-repeat center;
+  background-size: 100vw;
+  background-color:#648cff;
+  
   border-radius: 0 0 50% 50% / 4%;
 }
 
@@ -130,14 +133,29 @@ html {
 }
 
 .imglogo{
-  display: block;
+  display: none;
   margin-left: auto;
   margin-right: auto;
+  width: 50vw;
 }
 
 .navbar-nav{
   width: 100%;
   justify-content:flex-end;
+}
+
+@media only screen and (min-width: 768px){
+  .imglogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #fh5co-hero-wrapper {
+    height: 800px;
+    width: 100%;
+    background: url("../img/banner-bg.jpg") no-repeat center;
+    border-radius: 0 0 50% 50% / 4%;
+  }
 }
 /* ==========================================================================================================
 										ADVANTAGES
